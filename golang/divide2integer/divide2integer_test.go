@@ -19,6 +19,12 @@ func TestDivide2integer(t *testing.T) {
 			i2:     3,
 			result: 3,
 		},
+		{
+			name:   "dvidend 7, divisor -3 result should be -2",
+			i1:     7,
+			i2:     -3,
+			result: -2,
+		},
 	}
 	for _, i := range input {
 		t.Run(i.name, func(tt *testing.T) {
